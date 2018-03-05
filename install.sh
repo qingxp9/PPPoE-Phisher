@@ -4,5 +4,5 @@
 apt update
 apt install -y pppoe tshark 
 touch /etc/ppp/pppoe-server-options
-echo "require-pap\nlcp-echo-interval 10\nlcp-echo-failure 2" > /etc/ppp/pppoe-server-options
+echo -e "require-pap\nlcp-echo-interval 10\nlcp-echo-failure 2" > /etc/ppp/pppoe-server-options
 echo "* * * *" > /etc/ppp/pap-secrets
